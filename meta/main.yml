@@ -1,0 +1,9 @@
+galaxy_info:
+  author: emoruzzi
+  description: install repositories
+  license: BSD, MIT
+  min_ansible_version: 2.1
+  galaxy_tags: 
+    - repo
+    - repos
+    - repository

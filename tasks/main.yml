@@ -1,0 +1,12 @@
+---
+- name: Import repo GPG key.
+  rpm_key:
+    key: "{{ item.gpg_key_url }}"
+    state: present
+  with_items: "{{ repos }}"
+
+- name: Install repos
+  yum:
+    name: "{{ item.url }}"
+    state: present
+  with_items: "{{ repos }}"
